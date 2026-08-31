@@ -34,47 +34,93 @@
             font-weight: bolder;
         }
 
+        main {
+            padding: 5px;
+
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        section.jogos {
+            margin-right: 20px;
+
+            flex: auto;
+        }
+
         div.jg {
             background-color: white;
-            padding: 50px;
-            margin: 5px 10px 5px 10px;
+            padding: 20px;
+            margin-bottom: 2px;
             border-radius: 5px;
         }
 
         div.jg > h2 {
+        }
+
+        section.jogadores {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+
+            flex: auto;
+        }
+
+        section.jogadores > h2 {
             text-align: center;
         }
 
-
+        div.des {
+            padding-bottom: 10px;
+        }
+        
 
     </style>
 </head>
 <body>
-    <h1>Jogos paulistas</h1>
-    <nav>
-        <a class="menu" href="noticias/pag003.html">página de notícias</a>
-    </nav>
-    <div class="jg">
-        <h2>Cointhians X São Paulo</h2>
-        <ul>
-            <li>corinthians 1</li>
-            <li>São Paulo 1</li>
-        </ul>
-    </div>
-        <div class="jg">
-            <h2>Palmeiras X Novorizontino</h2>
-            <ul>
-                <li>novorizontino 4</li>
-                <li>palmeiras 0</li>
-            </ul>
-        </div>
-        <div class="jg">
-            <h2>Santos X Guarani</h2>
-            <ul>
-                <li>santos 1</li>
-                <li>guarani 1 </li>
-            </ul>
-        </div>
+    <header>
+        <h1>Jogos paulistas</h1>
+        <nav>
+            <a class="menu" href="noticias/pag003.html">página de notícias</a>
+        </nav>
+    </header>
+    <main>
+        <section class="jogos">
+            <div class="jg">
+                <h2>Cointhians X São Paulo</h2>
+                <p>corinthians 1</p>
+                <p>são pauo 1</p>
+            </div>
+                <div class="jg">
+                    <h2>Palmeiras X Novorizontino</h2>
+                    <ul>
+                        <li>novorizontino 4</li>
+                        <li>palmeiras 0</li>
+                    </ul>
+                </div>
+                <div class="jg">
+                    <h2>Santos X Guarani</h2>
+                    <ul>
+                        <li>santos 1</li>
+                        <li>guarani 1 </li>
+                    </ul>
+                </div>
+        </section>
+        <section class="jogadores">
+            <h2>Jogadores destaques</h2>
+            <div class="des">
+                <p>Yuri Alberto</p>
+                <p>corinthians</p>
+            </div>
+            <div class="des">
+                <p>Gustavo Gomes</p>
+                <p>Palmeiras</p>
+            </div>
+            <div class="des">
+                <p>Neymar</p>
+                <p>Santos</p>
+            </div>
+        </section>
+    </main>
     
     <p>Acesse mais resultados na <a href="pag002.html">segunda página</a></p>
      
